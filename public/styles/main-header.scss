@@ -1,0 +1,38 @@
+@import "variables.scss";
+
+.main-header {
+  background: #fff;
+  padding: 0.1% 20px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  .logo-container {
+    width:$logo;
+    height:$logo;
+    .logo {
+      width:$logo;
+      height:$logo;
+    }
+  }
+
+  .main-nav {
+    width:80%;
+    display: flex;
+    ul {
+      width:100%;
+      list-style-type: none;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      flex-wrap: nowrap;
+      align-items: center;
+      li {
+        a {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}

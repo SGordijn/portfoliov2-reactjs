@@ -1,0 +1,42 @@
+@import "variables.scss";
+
+.top-header {
+  background: #000;
+  color: #fff;
+
+  padding: 0.2% 20px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  align-items: center;
+
+  @media screen and (max-width:980px) {
+    display: none;
+  }
+
+  p {
+
+  }
+
+  .top-links {
+    width:100px;
+    margin:0;
+    list-style-type: none;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    li {
+      a {
+          width:$social;
+          height:$social;
+      }
+    }
+    .top-social-img {
+      width:$social;
+      height:$social;
+    }
+  }
+}
