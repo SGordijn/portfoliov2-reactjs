@@ -1,3 +1,69 @@
+@import "variables.scss";
+
 .main {
   background: #ffce99;
+
+  section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: 2% 0% 4% 0%;
+
+    .article-title {
+      width: 90%;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      margin-bottom: 1%;
+      .main-title {
+        font-size: 23px;
+        font-weight: bold;
+        font-family: $mainfont;
+        text-transform: uppercase;
+      }
+    }
+
+    .article-fullwidth {
+      width: 90%;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+
+      .full-widget {
+        background-color: red;
+        margin: 0% 0% 2% 0%;
+        padding: 1% 1% 1% 1%;
+        -webkit-box-shadow: $widgetshadow;
+        -moz-box-shadow: $widgetshadow;
+        box-shadow: $widgetshadow;
+      }
+    }
+
+    .article-2x2 {
+      width: 90%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+
+      .half-widget {
+        width: 45%;
+        background-color: red;
+        margin: 0% 0% 2% 0%;
+        padding: 1% 1% 1% 1%;
+        -webkit-box-shadow: $widgetshadow;
+        -moz-box-shadow: $widgetshadow;
+        box-shadow: $widgetshadow;
+      }
+    }
+
+    .widget-title {
+      color: white;
+      margin: 0% 0% 3% 0%;
+      font-family: $mainfont;
+    }
+  }
+
 }
