@@ -12,58 +12,179 @@
 
     .article-title {
       width: 90%;
-      flex-direction: column;
-      justify-content: space-around;
-      align-items: center;
       margin-bottom: 1%;
       .main-title {
-        font-size: 23px;
+        font-size: 32px;
         font-weight: bold;
-        font-family: $mainfont;
         text-transform: uppercase;
+        text-align: center;
+        color: #FFF;
+        text-shadow: 0.08em 0.08em 0.15em rgba(0,0,0,0.4);
       }
     }
 
-    .article-fullwidth {
-      width: 90%;
-      flex-direction: column;
-      justify-content: space-around;
-      align-items: center;
+    .article-full {
+      width: $widtharticle;
 
       .full-widget {
-        background-color: red;
         margin: 0% 0% 2% 0%;
-        padding: 1% 1% 1% 1%;
-        -webkit-box-shadow: $widgetshadow;
-        -moz-box-shadow: $widgetshadow;
-        box-shadow: $widgetshadow;
+        padding: 2% 5%;
+        background-color: $widgetbg;
+        -webkit-box-shadow: $widgetshadow-diagonal;
+        -moz-box-shadow: $widgetshadow-diagonal;
+        box-shadow: $widgetshadow-diagonal;
       }
     }
 
-    .article-2x2 {
-      width: 90%;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: center;
-      flex-wrap: wrap;
+    .article-half {
+      width: $widtharticle;
 
       .half-widget {
         width: 45%;
-        background-color: red;
+        min-height: 150px;
         margin: 0% 0% 2% 0%;
-        padding: 1% 1% 1% 1%;
-        -webkit-box-shadow: $widgetshadow;
-        -moz-box-shadow: $widgetshadow;
-        box-shadow: $widgetshadow;
+        padding: 2% 1.5%;
+        background-color: $widgetbg;
+        -webkit-box-shadow: $widgetshadow-diagonal;
+        -moz-box-shadow: $widgetshadow-diagonal;
+        box-shadow: $widgetshadow-diagonal;
+
+        @media screen and (max-width: 980px) {
+          width:100%;
+        }
+      }
+    }
+
+    .article-onethird {
+      width: $widtharticle;
+
+      .onethird-widget {
+        width: 28%;
+        min-height: 150px;
+        margin: 0% 0% 2% 0%;
+        padding: 2% 1.5%;
+        background-color: $widgetbg;
+        -webkit-box-shadow: $widgetshadow-diagonal;
+        -moz-box-shadow: $widgetshadow-diagonal;
+        box-shadow: $widgetshadow-diagonal;
+
+        @media screen and (max-width: 980px) {
+          width:100%;
+        }
+      }
+
+      .onethird-image-widget {
+        width: 28%;
+        min-height: 150px;
+        margin: 0% 0% 2% 0%;
+        padding: 2% 1.5%;
+
+        a {
+          width: 100%;
+          img {
+            width: 100%;
+          }
+
+          @media screen and (max-width: 980px) {
+            width: 60%;
+          }
+        }
+
+        @media screen and (max-width: 980px) {
+          width:100%;
+        }
       }
     }
 
     .widget-title {
-      color: white;
-      margin: 0% 0% 3% 0%;
-      font-family: $mainfont;
+      color: #fff;
+      margin: 0% 0% 0% 0%;
     }
+
+    .widget-text {
+      color: #fff;
+      font-size: 16px;
+    }
+
+    .widget-image {
+      width: 250px;
+      height: 250px;
+    }
+
+    .widget-textbox {
+      height: 80%;
+      width: 45%;
+    }
+
+    .center-text {
+      text-align: center;
+    }
+
+    .wrappedimage-about {
+      width: 225px;
+      height: 312.75px;
+      float: left;
+      margin: 10px 25px 10px 0px;
+      border-radius: 50%;
+      shape-outside: ellipse();
+
+      @media screen and (max-width: 980px) {
+        display: none;
+      }
+    }
+
+    .wrappedimage-team {
+      width: 225px;
+      height: 225px;
+      float: left;
+      margin: 10px 25px 10px 0px;
+      border-radius: 50%;
+      shape-outside: circle();
+
+      @media screen and (max-width: 980px) {
+        display: none;
+      }
+    }
+
+    .btn {
+      background-color: #000;
+      color: #fff;
+      padding: 10px 30px;
+      text-align: center;
+      text-decoration: none;
+      text-transform: uppercase;
+      border-radius: 50px;
+      font-size: 16px;
+      font-weight: bold;
+      box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+    }
+
+    .btn-primary {
+      background-color: #007bff;
+      color: #fff;
+    }
+
+    .btn-success {
+      background-color: #28a745;
+      color: #fff;
+    }
+
+    .btn-danger {
+      background-color: #dc3545;
+      color: #fff;
+    }
+
+    .btn-warning {
+      background-color: #ffc107;
+      color: #212529;
+    }
+
+    .btn-orange {
+      background-color: #fff;
+      color: #FF8500;
+    }
+
+
   }
 
 }

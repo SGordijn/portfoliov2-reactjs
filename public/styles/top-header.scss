@@ -6,12 +6,6 @@
 
   padding: 0.2% 4.5%;
 
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  flex-wrap: nowrap;
-  align-items: center;
-
   @media screen and (max-width:980px) {
     display: none;
   }
@@ -25,9 +19,6 @@
     margin:0;
     list-style-type: none;
 
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
     li {
       a {
           width:$social;

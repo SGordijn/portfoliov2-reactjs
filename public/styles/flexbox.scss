@@ -1,0 +1,126 @@
+//Flexbox Row Styles
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-row-start {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.flex-row-end {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.flex-row-center {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.flex-row-between {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.flex-row-around {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+//Flexbox Column Styles
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-column-start {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.flex-column-end {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.flex-column-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.flex-column-between {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.flex-column-around {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+//Flexbox wrap
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.flex-nowrap {
+  flex-wrap: nowrap;
+}
+
+//Flexbox Align Items
+.flex-align-items-stretch {
+  align-items: stretch;
+}
+
+.flex-align-items-start {
+  align-items: flex-start;
+}
+
+.flex-align-items-end {
+  align-items: flex-end;
+}
+
+.flex-align-items-center {
+  align-items: center;
+}
+
+.flex-align-items-baseline {
+  align-items: baseline;
+}
+
+//Flexbox Align Self
+.flex-align-self-stretch {
+  align-self: stretch;
+}
+
+.flex-align-self-start {
+  align-self: flex-start;
+}
+
+.flex-align-self-end {
+  align-self: flex-end;
+}
+
+.flex-align-self-center {
+  align-self: center;
+}
+
+.flex-align-self-baseline {
+  align-self: baseline;
+}
+
+.text-align-center {
+  text-align: center;
+}
