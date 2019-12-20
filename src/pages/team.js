@@ -1,20 +1,20 @@
 import React from 'react';
 import TopHeader from '../components/top-header';
 import MainHeader from '../components/main-header';
-import MainHome from '../components/main-home';
+import MainTeam from '../components/main-team';
 import Footer from '../components/footer';
 
-export class HomePage extends React.Component {
+export class TeamPage extends React.Component {
   render() {
     return (
       <div className="container">
         <TopHeader/>
         <MainHeader/>
-        <MainHome/>
+        <MainTeam/>
         <Footer/>
       </div>
     );
   }
 }
 
-export default HomePage;
+export default TeamPage;

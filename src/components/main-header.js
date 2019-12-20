@@ -12,6 +12,7 @@ function startTime() {
   h + ":" + m + ":" + s;
   var t = setTimeout(startTime, 500);
 }
+
 function checkTime(i) {
   if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
   return i;
@@ -20,9 +21,9 @@ function checkTime(i) {
 export class MainHeader extends React.Component {
   render() {
     return (
-      <header className="main-header" onLoad={startTime}>
-        <a className="logo-container" href="/"><img className="logo" alt="logo" src="img/logo.png"/></a>
-        <nav className="main-nav" id="main-nav">
+      <header className="main-header flex-row-between flex-nowrap flex-align-items-center" onLoad={startTime}>
+        <a className="logo-container" href="/"><img className="logo" src="img/logo.png" alt="logo"/></a>
+        <nav className="main-nav flex-row-around flex-nowrap flex-align-items-center" id="main-nav">
           <Nav/>
           <div className="clock" id="clock"></div>
         </nav>
