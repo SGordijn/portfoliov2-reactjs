@@ -1,14 +1,18 @@
 import React from 'react';
 import Nav from './nav';
+import MobileNav from './mobile-nav';
 
 function startTime() {
   var today = new Date();
   var h = today.getHours();
   var m = today.getMinutes();
   var s = today.getSeconds();
+  h = checkTime(h);
   m = checkTime(m);
   s = checkTime(s);
   document.getElementById('clock').innerHTML =
+  h + ":" + m + ":" + s;
+  document.getElementById('mobile-clock').innerHTML =
   h + ":" + m + ":" + s;
   var t = setTimeout(startTime, 500);
 }
@@ -27,8 +31,10 @@ export class MainHeader extends React.Component {
           <Nav/>
           <div className="clock" id="clock"></div>
         </nav>
-        <div className="mobile-menu">
-        </div>
+        <nav className="mobile-nav flex-column-around flex-nowrap flex-align-items-center" id="main-nav">
+          <MobileNav/>
+          <div className="clock" id="mobile-clock"></div>
+        </nav>
       </header>
     );
   }

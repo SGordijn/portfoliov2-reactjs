@@ -14,7 +14,6 @@ import HomePage from "./pages";
 import AboutPage from "./pages/about";
 import ProjectPage from "./pages/project";
 import TeamPage from "./pages/team";
-import ContactPage from "./pages/contact";
 import NotFoundPage from "./pages/404";
 
 function App() {
@@ -25,7 +24,6 @@ function App() {
         <Route exact path="/about" component={AboutPage}/>
         <Route exact path="/project" component={ProjectPage}/>
         <Route exact path="/team" component={TeamPage}/>
-        <Route exact path="/contact" component={ContactPage}/>
         <Route exact path="/404" component={NotFoundPage} />
         <Redirect to="/404" />
       </Switch>

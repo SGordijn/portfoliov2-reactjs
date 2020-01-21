@@ -1,3 +1,43 @@
 .main-footer {
   background: #000;
+  color: #fff;
+  font-size: 16px;
+  font-family: sans-serif;
+  .footer-section {
+    .footer-widget {
+      width: 20%;
+      ul {
+        list-style-type: none;
+        @media screen and (max-width: 980px) {
+          padding-left: 0;
+        }
+        li {
+          text-decoration: none;
+          line-height: 1.8;
+          a {
+            text-decoration: none;
+            color: #fff;
+            transition: 1s;
+          }
+          a:hover {
+            color: #FF8500;
+          }
+        }
+        .footer-title {
+          color: #FF8500;
+          font-size: 24px;
+          font-weight: bold;
+          line-height: normal;
+        }
+        .footer-mini-title {
+          color: #FF8500;
+          font-weight: bold;
+        }
+      }
+      @media screen and (max-width: 980px) {
+        width: 100%;
+        text-align: center;
+      }
+    }
+  }
 }

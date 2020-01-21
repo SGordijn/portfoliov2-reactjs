@@ -1,9 +1,9 @@
 import React from 'react';
 
-export class Nav extends React.Component {
+export class MobileNav extends React.Component {
   render() {
     return (
-      <ul className="desktop-ul flex-row-around flex-nowrap flex-align-items-center">
+      <ul className="mobile-ul flex-column-around flex-nowrap flex-align-items-center">
         <li><a href="/">Home</a></li>
         <li><a href="about">About</a></li>
         <li><a href="project">Projects</a></li>
@@ -13,4 +13,4 @@ export class Nav extends React.Component {
   }
 }
 
-export default Nav;
+export default MobileNav;
