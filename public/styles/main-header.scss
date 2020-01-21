@@ -5,7 +5,7 @@
   padding: 0.5% 5%;
 
   @media only screen and (max-width: 980px) {
-    //justify-content: space-between;
+
   }
 
   .logo-container {
@@ -21,9 +21,9 @@
     }
   }
 
-  .main-nav {
+  .main-nav, .mobile-nav {
     width:80%;
-    ul {
+    .desktop-ul, .mobile-ul {
       width:100%;
       list-style-type: none;
       li {
@@ -34,8 +34,28 @@
           color: #000;
           text-transform: uppercase;
           font-weight: bold;
+          line-height: 1.8;
+          padding: 10px;
         }
       }
+      @media only screen and (max-width: 980px) {
+        padding-left: 0;
+      }
+    }
+    @media only screen and (max-width: 980px) {
+      width: 100%;
+    }
+  }
+
+  @media only screen and (min-width: 768px) {
+    .mobile-nav {
+      display: none;
+    }
+  }
+
+  @media only screen and (max-width: 767px) {
+    .main-nav {
+      display: none;
     }
   }
 
@@ -46,9 +66,11 @@
     text-transform: uppercase;
     font-weight: bold;
     margin: 0% 0% 0% 8%;
-  }
+    @media only screen and (max-width: 980px) {
 
-  .mobile-menu {
-    display: none;
+    }
+    @media only screen and (max-width: 767px) {
+      margin: 0% 0% 4% 0%;
+    }
   }
 }

@@ -1,0 +1,63 @@
+.formcontainer {
+  width: 100%;
+
+  form {
+    width: 100%;
+
+    label {
+      font-size: 16px;
+      color: #fff;
+    }
+
+    input[type=text], input[type=email] {
+      width: 100%;
+      padding: 1% 2%;
+      margin: 1% 0 2% 0;
+      font-size: 16px;
+      font-family: sans-serif;
+      box-sizing: border-box;
+      border: 2px solid #ccc;
+      border-radius: 8px;
+      transition: 0.5s;
+    }
+
+    input[type=number] {
+      width: 50px;
+      padding: 1% 1%;
+      margin: 0% 1% 1% 1%;
+      font-size: 16px;
+      font-family: sans-serif;
+      box-sizing: border-box;
+      border: 2px solid #ccc;
+      border-radius: 8px;
+      transition: 0.5s;
+    }
+
+    input[type=text]:focus, input[type=email]:focus, input[type=number]:focus {
+      border: 2px solid #555;
+      outline: none;
+    }
+
+    input[type=submit] {
+      cursor: pointer;
+    }
+    
+    textarea {
+      width: 100%;
+      height: 150px;
+      padding: 1% 2%;
+      margin: 1% 0 2% 0;
+      font-size: 16px;
+      font-family: sans-serif;
+      box-sizing: border-box;
+      border: 2px solid #ccc;
+      border-radius: 8px;
+      transition: 0.5s;
+    }
+
+    textarea:focus {
+      border: 2px solid #555;
+      outline: none;
+    }
+  }
+}
