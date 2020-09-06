@@ -26,7 +26,7 @@ export class MainHeader extends React.Component {
   render() {
     return (
       <header className="main-header flex-row-between flex-nowrap flex-align-items-center" onLoad={startTime}>
-        <a className="logo-container" href="/"><img className="logo" src="img/logo.png" alt="logo"/></a>
+        <a className="logo-container" href="/"><img className="logo" src="img/logo2.png" alt="logo"/></a>
         <nav className="main-nav flex-row-around flex-nowrap flex-align-items-center" id="main-nav">
           <Nav/>
           <div className="clock" id="clock"></div>

@@ -10,9 +10,7 @@ export class Footer extends React.Component {
               <li className="footer-title">Contact</li>
               <br/>
               <li className="footer-mini-title">Email Address</li>
-              <li><a href="mailto:classified@gmail.com">classified@gmail.com</a></li>
-              <li className="footer-mini-title">Phonenumber</li>
-              <li><a href="tel:+31612345678">(+31)6 1234 56 78</a></li>
+              <li><a href="mailto:stephangordijn@gmail.com">stephangordijn@gmail.com</a></li>
             </ul>
           </div>
           <div className="footer-widget">

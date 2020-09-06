@@ -12,8 +12,8 @@ import {
 
 import HomePage from "./pages";
 import AboutPage from "./pages/about";
-import ProjectPage from "./pages/project";
-import TeamPage from "./pages/team";
+import ProjectsPage from "./pages/projects";
+import FriendsPage from "./pages/friends";
 import NotFoundPage from "./pages/404";
 
 function App() {
@@ -22,8 +22,8 @@ function App() {
       <Switch>
         <Route exact path="/" component={HomePage}/>
         <Route exact path="/about" component={AboutPage}/>
-        <Route exact path="/project" component={ProjectPage}/>
-        <Route exact path="/team" component={TeamPage}/>
+        <Route exact path="/projects" component={ProjectsPage}/>
+        <Route exact path="/friends" component={FriendsPage}/>
         <Route exact path="/404" component={NotFoundPage} />
         <Redirect to="/404" />
       </Switch>

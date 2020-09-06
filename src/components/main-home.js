@@ -12,14 +12,14 @@ export class MainHome extends React.Component {
           <article className="article-half flex-row-between flex-wrap flex-align-items-center">
             <div className="half-widget home-size flex-column-between flex-wrap flex-align-items-center" data-aos="zoom-in" data-aos-duration="1500">
               <h2 className="widget-title">Projects</h2>
-              <p className="widget-text center-text">In this page, you will get to see a small collection of projects that I have worked on and/or completed.</p>
+              <p className="widget-text center-text">In this page, you will get to see a small collection of projects that I have worked on.</p>
               <a className="btn btn-orange btn-shadow" href="/project">Click Here</a>
             </div>
 
             <div className="half-widget home-size flex-column-between flex-wrap flex-align-items-center" data-aos="zoom-in" data-aos-duration="1500">
-              <h2 className="widget-title">Team Projectile</h2>
-              <p className="widget-text center-text">Want to know more about the group of YouTubers and Twitch streamers that I am part of? This is the place to read all about it!</p>
-              <a className="btn btn-orange btn-shadow" href="/team">Click Here</a>
+              <h2 className="widget-title">Friends</h2>
+              <p className="widget-text center-text">From former colleagues to fellow streamers, you will find a collection of fantastic people I've had the pleasure of working with in this page.</p>
+              <a className="btn btn-orange btn-shadow" href="/friends">Click Here</a>
             </div>
 
             <div className="half-widget home-size flex-column-between flex-wrap flex-align-items-center" data-aos="zoom-in" data-aos-duration="1500">
