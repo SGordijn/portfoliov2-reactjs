@@ -3,7 +3,7 @@
 .top-header {
   background: #000;
   color: #fff;
-
+  opacity: 0.8;
   padding: 0.2% 4.5%;
 
   @media screen and (max-width:980px) {
@@ -11,7 +11,8 @@
   }
 
   .top-title {
-    color: #FF8500;
+    //color: #FF8500;
+    color: #8ccefd;
     font-size: 16px;
     font-weight: bold;
   }

@@ -1,6 +1,7 @@
 .main-footer {
   background: #000;
   color: #fff;
+  opacity: 0.8;
   font-size: 16px;
   font-family: sans-serif;
   .footer-section {
@@ -20,18 +21,21 @@
             transition: 1s;
           }
           a:hover {
-            color: #FF8500;
+            //color: #FF8500;
+            color: #8ccefd;
           }
         }
         .footer-title {
-          color: #FF8500;
+          //color: #FF8500;
+          color: #FFF;
           font-size: 24px;
           font-weight: bold;
           line-height: normal;
         }
         .footer-mini-title {
-          color: #FF8500;
+          color: #8ccefd;
           font-weight: bold;
+          
         }
       }
       @media screen and (max-width: 980px) {
